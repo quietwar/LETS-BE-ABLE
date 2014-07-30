@@ -3688,6 +3688,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-pills > li {
+  background-color: #222222;
   float: left;
 }
 .nav-pills > li > a {
@@ -3700,7 +3701,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #428bca;
+  background-color: #222222;
 }
 .nav-stacked > li {
   float: none;
