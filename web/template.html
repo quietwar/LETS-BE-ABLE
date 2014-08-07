@@ -1,3 +1,4 @@
+
 <html>
   <head>
 
@@ -22,19 +23,23 @@
 
     <title>Page Title</title>
   </head>
+ <p>
+<a href="#C4">CLICK</a> <ul align="right"> <a href="#C5">CLICK CLICK</a>
+</p></ul>
   <body>
 
-  
-
-  <div class="jumbotron">
-  <ul align="center" class="nav nav-pills nav-justified">
+   <ul align="center" class="nav nav-pills nav-justified">
     <li class="active"><a href="template3.html">Contact US</a></li>
     <li><a href="template.html">LETS - BE - ABLE</a></li>
     <li><a href="template2.html">Support</a></li>
   </ul>
 
+  <div class="jumbotron">
+  <ul align="center" class="nav nav-pills nav-justified">
+    
+
   <br><h2><center>  About US </center></h2><br>
-      <center><p><font size="4">Essentially my application is for teens from 13-18. I want to try and help them get YES from their parents, so teens can not get in trouble <br>for asking a question at the wrong time. So i put a app togethere that takes your input and then tells you what your chances are when you<br> ask this question to your parents.</font></p></center>
+      <center><p><font size="4">Essentially my application is for teens from the ages <br>of 13-18. I want to try and help them get YES from their parents, so teens can not get in trouble <br>for asking a question at the wrong time. So i put a app together that takes your input and then tells you <br>what your chances are and when would it be better to ask your parents what you want.<br>So try it now and tell us stuff about what we can do better and how you feel THANKS!!!!!</font></p></center>
 
       <br><center><a href ="template4.html" class="btn btn-primary btn-lg" role="NEXT">NEXT</a></p></center></br></div>
       <br></div>
@@ -45,14 +50,15 @@
 
     <div class="jumbotron">
         <br><center><h1>Support</h1></center></br>
-                <form name=  action="/submit" method="POST">
-                What problems do you have with this app?(please be honest) <input type=class="form-control-sm"><br><br>
-                What would you change/add in this app?(please be honest)<input type=class="form-control-sm"><br><br>
+                <a id="C4">Support</a>
+                <form name="Support_form"  action="http://127.0.0.1:5000/submit" method="POST">
+                What problems do you have with this app?(please be honest) <input type="text" name="appproblem"  class="form-control"><br><br>
+                What would you change/add in this app?(please be honest)<input type="text" name= "changeapp" class="form-control"><br><br>
 
-                Would you tell others about this app? What would you say?(please be honest)<br><textarea class = "form-control" rows="10" cols="20">
+                Would you tell others about this app? What would you say?(please be honest)<br><textarea name= "tellapp" class = "form-control" rows="10" cols="20">
 
                 </textarea><br><br>
-                <a href ="template5.html" class="btn btn-primary btn-lg" role="button">Submit</a></p></center>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button></p></center>
 
                 </form></div></div>
                 <br></div>
@@ -60,17 +66,19 @@
 
 
        
+<div class="col-md-6 col-md-offset-3">
+        <div class="jumbotron" id="Contact">
+          <a id="C5">CONTACT</a>
+                <h1>Contact</h1>
+                <form name= "contactform"action="http://127.0.0.1:5000/submity" method="POST">
+                Name: <input type="text" name= "nameform"class="form-control-sm"><br><br>
+                Email: <input type="text" name= "emailform"class="form-control-sm"><br><br>
 
-        <div class="jumbotron">
-        <br><center><h1>Contact</h1></center></br>
-                <form name= "name" action="/submit" method="POST">
-                Name: <input type="text" class="form-control-sm"><br><br>
-                Email: <input type="text" class="form-control-sm"><br><br>
-
-                Your Message: <br><textarea class = "form-control" rows="10" cols="20">
+                Your Message: <br><textarea class = "form-control" rows="10" cols="20"name="messageform">
 
                 </textarea><br><br>
-                <a href ="template6.html" class="btn btn-primary btn-lg" role="button">Submit</a></p>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button></p></center>
+              
 
                 </form></div></div>
                 <br></div>

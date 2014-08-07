@@ -19,26 +19,21 @@
 	  	<li class="active"><a href="template3.html">Contact US</a></li>
 	  	<li><a href="template.html">LETS - BE - ABLE</a></li>
 	  	<li><a href="template2.html">Support</a></li>
-  	</ul>
-		<div class="jumbotron">
-		<center><h1>Support</h1>
-                <form name= "name" action="/submit" method="POST">      <center></center>
-                 </center><br><br>
-  <center>Would you tell others about this app?(please be honest) <select name = "options">
-      <option value= "Yes" name="zae1"> Yes</option>
-      <option value = "No"name="zae2">No</option></select><br>
+  	
 
-        </ul><br><br>
-      </center><!-- /btn-group -->
+  	<div class="jumbotron">
+        <br><center><h1>Support</h1></center></br>
+                <form name="Support_form"  action="http://127.0.0.1:5000/submit" method="POST">
+                What problems do you have with this app?(please be honest) <input type="text" name="appproblem"  class="form-control"><br><br>
+                What would you change/add in this app?(please be honest)<input type="text" name= "changeapp" class="form-control"><br><br>
 
-                <center> What problems do you have with this app?(please be honest)<textarea rows = "10" cols="30"name="zae3"></textarea></center><br><br>
+                Would you tell others about this app? What would you say?(please be honest)<br><textarea name= "tellapp" class = "form-control" rows="10" cols="20">
 
-                <center>What would you change/add in this app?(please be honest) <textarea rows="10" cols="30"name="zae4">
+                </textarea><br><br>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button></p></center>
 
-                </textarea></center>
-                <center><a href ="template5.html" class="btn btn-primary btn-lg" role="button">Submit</a>
-                </center>
-                </form></div><br>
-                </div>
+                </form></div></div>
+                <br></div>
+
 	</body>
 </html>
